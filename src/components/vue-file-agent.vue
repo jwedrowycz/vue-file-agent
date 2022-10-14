@@ -50,7 +50,7 @@
         @sort-end="sortEnd($event)"
         :helperClass="'active-sorting-item'"
       >
-        <transition-group name="grid-box" tag="div" class="">
+        <div name="grid-box" tag="div" class="flex flex-wrap gap-3">
           <!-- <template v-for="(fileRecord, index) in fileRecords"> -->
           <component
             :is="isSortable ? 'vfa-sortable-item' : 'VueFileListItem'"
@@ -98,7 +98,7 @@
               </div>
             </slot>
           </template>
-        </transition-group>
+        </div>
       </component>
       <input
         title=""
